@@ -1,0 +1,14 @@
+<p>product-list works!</p>
+<!-- <ul>
+    <li *ngFor='let product of productList'>
+        {{product.name}} | {{product.price}} | {{product.category}}
+    </li>
+</ul> -->
+<table>
+    <tr *ngFor='let product of productList'>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td><img [src]='product.imgPath'/></td>
+        <td><button (click)='addToCart(product)'>+</button></td>
+    </tr>
+</table>

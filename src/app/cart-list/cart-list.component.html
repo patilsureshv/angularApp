@@ -1,0 +1,9 @@
+<p>cart-list works!</p>
+<table>
+    <tr *ngFor='let product of cartProductList'>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td><img [src]='product.imgPath'/></td>
+        
+    </tr>
+</table>

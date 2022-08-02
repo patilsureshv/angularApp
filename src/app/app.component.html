@@ -1,0 +1,10 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="username">
+    <div class="navbar-nav">
+        <!-- <app-menu></app-menu> -->
+        <a class="nav-item nav-link" routerLink="/users" mat-menu-item>Home</a>
+        <a class="nav-item nav-link" routerLink="/products">Product</a>
+        <a class="nav-item nav-link" routerLink="/cart">cart</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav>
+<router-outlet></router-outlet>
